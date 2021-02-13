@@ -183,6 +183,7 @@ intro */
   color: #ffffff;
   background-image: url(./images/intro-bg.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .intro__title-block {
@@ -250,17 +251,18 @@ about */
 .two-columns {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   margin-top: 80px;
 }
 
-.column {
+.column-text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   margin-right: 20px;
-  max-width: 46%;
+  width: 46%;
 }
 
 .column:last-of-type {
@@ -308,6 +310,7 @@ steps */
 .steps__inner {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .steps__item {
@@ -493,6 +496,7 @@ prices */
 .services {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .service {
@@ -836,4 +840,118 @@ footer */
 
 .email_place_footer {
   text-align: right;
+}
+
+@media (max-width: 1200px) {
+  .intro__title {
+    font-size: 52px;
+  }
+
+  .prices {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .intro__title {
+    font-size: 44px;
+  }
+
+  .about {
+    padding-bottom: 40px;
+  }
+
+  .two-columns {
+    margin-top: 40px;
+  }
+
+  .column-text {
+    width: 100%;
+  }
+
+  .column-video {
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .video {
+    margin: 0 auto;
+  }
+
+  .steps {
+    padding-top: 40px;
+  }
+
+  .gallery {
+    height: 750px;
+  }
+
+  /* GALLERY WIDTH 1140PX !!! */
+}
+
+@media (max-width: 768px) {
+
+  .menu {
+    display: none;
+  }
+
+  .intro__title {
+    font-size: 36px;
+  }
+
+  .intro__subtitle {
+    font-size: 16px;
+  }
+
+  .intro__button {
+    font-size: 20px;
+  }
+
+  .about {
+    padding-top: 40px;
+  }
+
+  .steps__item {
+    margin-bottom: 40px;
+    width: 45%;
+  }
+
+  .steps__title {
+    font-size: 20px;
+  }
+
+  .gallery {
+    padding-top: 20px;
+  }
+
+  /* GALLERY WIDTH 1140PX !!! */
+  
+  .contact_type_form {
+    width: 100%;
+  }
+  
+  .contact_type_address {
+    margin-top: 30px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .section__title {
+    margin-bottom: 20px;
+  }
+
+  .steps__item {
+    width: 100%;
+  }
+
+  .service {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .service:last-of-type {
+    margin-bottom: 0;
+  }
 }
