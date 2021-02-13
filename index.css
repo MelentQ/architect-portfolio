@@ -45,6 +45,10 @@
 .overlay {
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.overlay_place_intro {
   background-color: rgba(0, 0, 0, .5);
 }
 
@@ -193,7 +197,7 @@ intro */
   width: 100%;
 
   color: #ffffff;
-  background-image: url(./images/joakim-honkasalo.jpg);
+  background-image: url(./images/intro-bg.jpg);
   background-size: cover;
 }
 
@@ -224,8 +228,8 @@ intro */
   padding: 14px 40px;
 
   text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.4);
-  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);;
+  color: rgba(0, 0, 0, 0.9);
   font-size: 24px;
   border: 0;
   border-radius: 2px;
@@ -238,8 +242,8 @@ intro */
 }
 
 .intro__button:hover {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.9); 
+  color: rgba(0, 0, 0, 1);
 }
 
 /* ===
@@ -267,7 +271,12 @@ about */
 }
 
 .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   margin-right: 20px;
+  max-width: 46%;
 }
 
 .column:last-of-type {
@@ -288,6 +297,7 @@ about */
   font-size: 16px;
   line-height: 1.1;
   font-weight: 400;
+  text-align: justify;
 }
 
 .column__paragraph:last-of-type {
@@ -295,13 +305,13 @@ about */
 }
 
 .video {
-  display: block;
+  display: flex;
 
-  margin-bottom: 20px;
   height: 316px;
   width: 515px;
 
   border: 0;
+  background-color: #8dd8c8;
 }
 
 .video__subtitle {
@@ -333,6 +343,7 @@ steps */
   width: 30%;
 
   border: solid 2px #f2f2f2;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .5);
 }
 
 .steps__img {
@@ -416,6 +427,7 @@ gallery */
   width: 100%;
 
   overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
 }
 
 .gallery__image {
@@ -906,7 +918,8 @@ footer */
   width: 100%;
 
   color: #ffffff;
-  background-image: url(./images/joakim-honkasalo.jpg);
+  background-image: url(./images/intro-bg.jpg);
+  background-position: center;
   background-size: cover;
 }
 
