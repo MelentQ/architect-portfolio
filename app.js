@@ -51,18 +51,6 @@ $(function () {
   //   nav.toggleClass('show')
   // })
 
-  // Testimonials: https://kenwheeler.github.io/slick/
-  // let slider = $('#gallerySlider')
-
-  // slider.slick({
-  //   infinite: true,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   fade: true,
-  //   arrows: false,
-  //   dots: true,
-  // })
-
   $('.gallery__slider').slick({
     speed: 1000,
     easing: 'ease',
@@ -70,7 +58,6 @@ $(function () {
     autoplaySpeed: 5000,
     draggable: false,
     touchThreshold: 5,
-    // centerMode: true,
-    variableWidth: true,
+    adaptiveHeight: true,
   });
 })
