@@ -6,8 +6,9 @@ $(function () {
   let introH = intro.innerHeight()
   let scrollPos = $(window).scrollTop()
 
-  // let nav = $('#nav')
-  // let navToggle = $('#navToggle')
+  let menu = $('#menu')
+  let menuToggle = $('#menuToggle')
+  let menuCancel = $('#menuCancel')
 
   checkScroll(scrollPos, introH)
 
@@ -34,7 +35,7 @@ $(function () {
     let elementId = $(this).data('scroll')
     let elementOffset = $(elementId).offset().top
 
-    // nav.removeClass('show')
+    menu.removeClass('show')
 
     $('html, body').animate(
       {
@@ -44,12 +45,19 @@ $(function () {
     )
   })
 
-  // Nav Toggle
-  // navToggle.on('click', function (event) {
-  //   event.preventDefault()
+  // Menu Toggle
+  menuToggle.on('click', function (event) {
+    event.preventDefault()
 
-  //   nav.toggleClass('show')
-  // })
+    menu.toggleClass('show')
+  })
+
+  // Menu Cancel
+  menuCancel.on('click', function (event) {
+    event.preventDefault()
+
+    menu.removeClass('show')
+  })
 
   $('.gallery__slider').slick({
     speed: 1000,
