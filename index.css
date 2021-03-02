@@ -620,6 +620,12 @@ contacts */
   color: rgba(255, 255, 255, 1);
 }
 
+.whatsapp:focus {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 1);
+  outline: none;
+}
+
 .social-icon {
   margin-right: 10px;
   height: 20px;
@@ -630,6 +636,10 @@ contacts */
 }
 
 .whatsapp:hover .social-icon {
+  fill: rgb(64, 207, 64);
+}
+
+.whatsapp:focus .social-icon {
   fill: rgb(64, 207, 64);
 }
 
@@ -672,19 +682,20 @@ form */
   box-sizing: border-box;
   padding: 10px;
 
-  border: 0;
+  border: 1px solid #cccccc;
   font-family: inherit;
   font-size: 16px;
   line-height: 1.1;
   font-weight: 400;
   background-color: #f2f2f2;
   opacity: 0.7;
-  transition: opacity 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .form__item:focus {
   opacity: 1;
   outline: none;
+  background-color: #cccccc;
 }
 
 .form__item:hover {
