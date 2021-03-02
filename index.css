@@ -954,7 +954,9 @@ footer */
   }
 
   .form__input-container {
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
+    display: flex;
+    flex-direction: column;
   }
   
   .form_type_content {
