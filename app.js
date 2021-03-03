@@ -76,5 +76,6 @@ $(function () {
     fadeEffect: {
       crossFade: true,
     },
+    touchRatio: 0,
   });
 })
