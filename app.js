@@ -59,13 +59,22 @@ $(function () {
     menu.removeClass('show')
   })
 
-  $('.gallery__slider').slick({
+  new Swiper('.swiper-container', {
+    navigation: {
+      nextEl: '.custom-button-next',
+      prevEl: '.custom-button-prev',
+    },
+    autoHeight: true,
+    spaceBetween: 50,
+    loop: true,
+    autoplay: {
+      dalay: 5000,
+      disableOnInteraction: true,
+    },
     speed: 1000,
-    easing: 'ease',
-    autoplay: true,
-    autoplaySpeed: 5000,
-    draggable: false,
-    touchThreshold: 5,
-    adaptiveHeight: true,
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true,
+    },
   });
 })

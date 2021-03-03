@@ -1,4 +1,5 @@
 @import url(./vendor/normalize.css);
+@import url(./vendor/swiper-bundle.min.css);
 
 @font-face {
   src: url(./vendor/fonts/montserrat/Montserrat-Regular.ttf);
@@ -473,46 +474,10 @@ gallery */
   overflow: hidden;
 }
 
-.gallery__slider {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-
-  width: 100%;
-  height: fit-content;
-
-  overflow: hidden;
-}
-
-.slick-item {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-
-  transition: all 0.3s ease;
-  opacity: 0.7;
-}
-
-.slick-item:focus {
-  outline: none;
-}
-
-.slick-item.slick-active {
-  opacity: 1;
-}
-
-.slick-item.slick-active .gallery__image {
-  box-sizing: border-box;
-  border: solid 3px #f2f2f2;
-}
-
-.slick-item.slick-active .gallery__photo-name {
-  opacity: 1;
-}
-
 .gallery__image {
   display: block;
 
+  max-width: 100%;
   height: auto;
 
   object-fit: cover;
@@ -528,16 +493,9 @@ gallery */
   font-size: 16px;
   line-height: 1.1;
   font-weight: 400;
-  opacity: 0;
-  transition: opacity 0.3s ease 1s;
 }
 
-.slick-track {
-  display: flex;
-  align-items: flex-start;
-}
-
-.gallery__slider .slick-arrow {
+.custom-button {
   position: absolute;
   bottom: 0;
   z-index: 10;
@@ -557,24 +515,24 @@ gallery */
   transition: opacity 0.3s linear;
 }
 
-.slick-arrow:focus {
-  outline: none;
-}
-
-.slick-arrow:hover {
+.custom-button:hover {
   opacity: 1;
 }
 
-.gallery__slider .slick-arrow.slick-prev {
-  right: 60px;
-
-  background: url(./images/left-arrow.svg) 0 0 / 100% no-repeat;
+.custom-button:focus {
+  outline: none;
 }
 
-.gallery__slider .slick-arrow.slick-next {
+.custom-button-next {
   right: 0;
 
   background: url(./images/right-arrow.svg) 0 0 / 100% no-repeat;
+}
+
+.custom-button-prev {
+  right: 60px;
+
+  background: url(./images/left-arrow.svg) 0 0 / 100% no-repeat;
 }
 
 /* ===
@@ -605,6 +563,10 @@ prices */
 }
 
 .service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   box-sizing: border-box;
   padding: 20px;
 
@@ -638,6 +600,35 @@ prices */
   font-size: 16px;
   line-height: 1.1;
   font-weight: 400;
+}
+
+.service__example {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  margin-top: 20px;
+
+  text-decoration: none;
+  color: #000000;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.service__example:hover {
+  opacity: 1;
+}
+
+.pdf-icon {
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+  fill: rgb(0, 0, 0);
+  transition: all 0.3s ease;
+}
+
+.service__example:hover .pdf-icon{
+  fill: rgb(230, 49, 49);
 }
 
 /* ===
