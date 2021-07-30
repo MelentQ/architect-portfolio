@@ -67,10 +67,10 @@ $(function () {
     autoHeight: true,
     spaceBetween: 50,
     loop: true,
-    autoplay: {
-      dalay: 5000,
-      disableOnInteraction: true,
-    },
+    // autoplay: {
+    //   dalay: 5000,
+    //   disableOnInteraction: true,
+    // },
     speed: 1000,
     effect: 'fade',
     fadeEffect: {
