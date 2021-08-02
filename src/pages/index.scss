@@ -1,0 +1,27 @@
+@import '../vendor/normalize';
+@import '../vendor/swiper/swiper-bundle.min';
+
+// Google Fonts
+// 'Podkova' 600
+// 'Oswald' 200, 400
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Podkova:wght@600&display=swap');
+
+@import '../blocks/_mixins';
+@import '../blocks/_variables';
+
+@import '../blocks/page';
+
+@import '../blocks/link-with-icon';
+@import '../blocks/share-link';
+@import '../blocks/menu';
+
+@import '../blocks/header';
+@import '../blocks/intro';
+@import '../blocks/about';
+@import '../blocks/steps';
+@import '../blocks/gallery';
+@import '../blocks/slide';
+@import '../blocks/services';
+@import '../blocks/service';
+@import '../blocks/contacts';
+@import '../blocks/footer';

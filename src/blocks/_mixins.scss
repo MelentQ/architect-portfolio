@@ -1,0 +1,20 @@
+@mixin cool-border($top, $right, $bottom, $left) {
+  border-top: solid $top $bg-color-alt;
+  border-right: solid $right $bg-color-alt;
+  border-bottom: solid $bottom $bg-color-alt;
+  border-left: solid $left $bg-color-alt;
+}
+
+@mixin main-text {
+  font-size: $fs-main-text;
+  font-weight: 200;
+}
+
+@mixin accent-text {
+  font-size: $fs-alt-text;
+  font-weight: 400;
+}
+
+@mixin transition($target) {
+  transition: $target 0.3s ease;
+}

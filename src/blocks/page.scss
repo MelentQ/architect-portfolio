@@ -1,0 +1,53 @@
+.page {
+  font-family: 'Oswald', sans-serif;
+  @include main-text;
+  line-height: 1.2;
+  color: $color-main-text;
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+
+  &__container {
+    max-width: 880px;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    &_place {
+
+      &_intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding-top: $header-height + 60px;
+        padding-bottom: 60px;
+        height: 100vh;
+
+        @media screen and (max-width: 767px) {
+          height: auto;
+        }
+      }
+    }
+  }
+
+  &__section-title {
+    margin: 0 0 40px 0;
+
+    font-size: $fs-section-title;
+    letter-spacing: 1.2px;
+    line-height: 1.1;
+    font-weight: 600;
+    font-family: 'Podkova', serif;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+
+      font-size: 28px;
+    }
+  }
+}
