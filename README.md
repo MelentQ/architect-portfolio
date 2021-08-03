@@ -2,8 +2,8 @@
 
 ## About
 
-Отзывчивый лендинг, портфолио архитектора.
-Коммерческий проект
+Отзывчивый лендинг, портфолио архитектора  
+Коммерческий проект  
 https://oleg-proekt.ru
 
 ## Tech Stack
@@ -38,4 +38,5 @@ https://oleg-proekt.ru
 ## Links
 
 [GH Pages](https://melentq.github.io/architect-portfolio)
+
 [oleg-proekt.ru](https://oleg-proekt.ru)
