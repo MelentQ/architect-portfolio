@@ -1,0 +1,88 @@
+.round-link {
+  position: relative;
+  display: block;
+
+  width: 36px;
+  height: 36px;
+
+  background-color: $bg-color-alt;
+  border-radius: 50%;
+  @include transition(background-color);
+
+  &:hover {
+    background-color: rgba(0,0,0,0);
+  }
+
+  &:focus {
+    outline: none;
+    background-color: rgba(0,0,0,0);
+  }
+
+  &:hover .round-link__icon {
+    fill: $color-alt-text;
+  }
+
+  &:focus .round-link__icon {
+    fill: $color-alt-text;
+  }
+
+  &_place {
+
+    &_menu {
+      width: 40px;
+      height: 40px;
+      background-color: $color-alt-text;
+      opacity: 0.8;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &:focus {
+        opacity: 1;
+      }
+    }
+  }
+
+  &_type {
+
+    &_wa {
+      &:hover .round-link__icon {
+        fill: $wa-color;
+      }
+      &:focus .round-link__icon {
+        fill: $wa-color;
+      }
+    }
+
+    &_telegram {
+      &:hover .round-link__icon {
+        fill: $telegram-color;
+      }
+      &:focus .round-link__icon {
+        fill: $telegram-color;
+      }
+    }
+
+    &_email {
+      &:hover .round-link__icon {
+        fill: $email-color;
+      }
+      &:focus .round-link__icon {
+        fill: $email-color;
+      }
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 22px;
+    height: 22px;
+    fill: $bg-button;
+    @include transition(fill);
+  }
+}

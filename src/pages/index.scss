@@ -1,4 +1,5 @@
 @import '../vendor/normalize';
+@import '../vendor/fonts/fonts.css';
 @import '../vendor/swiper/swiper-bundle.min';
 
 // Google Fonts
@@ -12,8 +13,9 @@
 @import '../blocks/page';
 
 @import '../blocks/link-with-icon';
-@import '../blocks/share-link';
+@import '../blocks/round-link';
 @import '../blocks/menu';
+@import '../blocks/modal';
 
 @import '../blocks/header';
 @import '../blocks/intro';

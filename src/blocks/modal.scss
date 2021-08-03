@@ -1,0 +1,92 @@
+.modal {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+
+  transition: visibility 0.15s, opacity 0.3s linear;
+  opacity: 0;
+  background-color: $bg-modal-overlay;
+
+  &_opened {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: -60px;
+    right: -60px;
+
+    padding: 0;
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    background: none;
+    transform: rotate(45deg);
+    cursor: pointer;
+    opacity: 0.8;
+    @include transition(opacity);
+
+    @media screen and (max-width: 767px) {
+      top: -30px;
+      right: -30px;
+
+      width: 30px;
+      height: 30px;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:focus {
+      outline: none;
+      opacity: 1;
+    }
+  }
+
+  &__close-btn-icon {
+    fill: $color-alt-text;
+  }
+
+  &__image-container {
+    position: relative;
+
+    margin: 0;
+    max-width: 75vw;
+    max-height: 75vh;
+  }
+
+  &__image {
+    display: block;
+
+    margin-bottom: 10px;
+    max-width: 75vw;
+    max-height: 75vh;
+    width: 100%;
+
+    object-fit: cover;
+  }
+
+  &__image-name {
+    max-width: 75vh;
+
+    @include main-text;
+    line-height: 1.21;
+    color: $color-alt-text;
+  }
+}

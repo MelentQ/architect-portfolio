@@ -1,5 +1,5 @@
 .page {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', '_Oswald', sans-serif;
   @include main-text;
   line-height: 1.2;
   color: $color-main-text;
@@ -42,7 +42,7 @@
     letter-spacing: 1.2px;
     line-height: 1.1;
     font-weight: 600;
-    font-family: 'Podkova', serif;
+    font-family: 'Podkova', '_Podkova', serif;
 
     @media screen and (max-width: 767px) {
       margin-bottom: 20px;
